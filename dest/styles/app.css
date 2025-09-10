@@ -1890,6 +1890,13 @@ img {
   }
 }
 
+@media (max-width: 374px) {
+  .home-banner__form .input__label {
+    top: 18px;
+    font-size: 12px;
+  }
+}
+
 @media (max-width: 991px) {
   .aside {
     display: none;
