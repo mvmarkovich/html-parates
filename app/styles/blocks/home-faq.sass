@@ -1,0 +1,49 @@
+.home-faq
+    &__card
+        background: #f1f1f1
+        border-radius: 14px
+        padding: 28px 32px @xl 32px 40px
+        margin-bottom: 12px @xl 16px
+
+        &:last-child
+            margin: 0
+
+        &-btn
+            font-family: var(--third-family)
+            color: var(--color-azure-26)
+            text: 600 18px @xl 22px
+            width: 100%
+            display: flex
+            justify-content: space-between
+
+            &:after
+                content: ''
+                size: 20px @xl 24px
+                min-width: 20px @xl 24px
+                background: resolve("icons/home-faq-chevron.svg") no-repeat center / contain
+                margin-left: 32px
+                transition: .2s
+
+            &:hover
+                color: @lg #0236a6
+
+            &[aria-expanded="true"]
+                &:after
+                    transform: rotate(180deg)
+
+                & ~ ^^&-content
+                    margin-top: 28px
+
+        &-content
+            height: 0
+            transition: .2s
+            overflow: hidden
+
+            & > *
+                margin: 20px 0
+
+                &:last-child
+                    margin-bottom: 0
+
+                &:first-child
+                    margin-top: 0

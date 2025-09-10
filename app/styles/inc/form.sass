@@ -1,0 +1,70 @@
+.btns-spacer
+	display: flex
+	flex-wrap: wrap
+	margin-bottom: -12px
+
+	> *
+		margin-right: 12px
+		margin-bottom: 12px
+
+.form
+	&__group
+		display: flex
+		flex-wrap: wrap
+		gap: 0 16px
+
+		> *
+			width: calc(50% - 10px)
+
+	&__send
+		width: 100%
+		min-height: 64px
+
+	&__footer
+		margin-top: 24px @md 32px
+
+.input
+	font-family: var(--font-family)
+	margin-bottom: 20px
+	display: block
+	position: relative
+
+	&__label
+		color: #999
+		text: 400 16px 1.2
+		display: inline-block
+		position: absolute
+		top: 16px
+		left: 20px
+		transition: .2s
+
+	&__cell
+		position: relative
+		font-family: var(--font-family)
+		color: #000
+		text: 400 16px 1.2
+		background: #efefef
+		border-radius: 5px
+		min-height: 50px
+		padding: * 20px
+		padding-top: 16px
+		width: 100%
+		transition: .2s
+		resize: none
+		border: none
+		outline: none
+
+		&:focus
+			& ~ .input__label
+				color: var(--color-azure-26)
+				text: 10px
+				top: 11px
+
+			&::placeholder
+				color: transparent
+
+	&-has-value
+		^&__label
+			color: var(--color-azure-26)
+			text: 10px
+			top: 11px

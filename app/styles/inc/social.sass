@@ -1,0 +1,51 @@
+.social
+    display: flex
+
+    &__link
+        display: inline-flex
+        align-items: center
+        margin-right: 10px
+        opacity: .8
+        transition: .2s
+
+        &:hover
+            opacity: @lg 1
+
+        &:before
+            content: ''
+            background-repeat: no-repeat
+            background-position: center
+            background-size: contain
+            size: 48px
+            min-width: 48px
+
+        &--ln
+            &:before
+                
+        &--yb
+            &:before
+
+        &--inst
+            &:before
+
+        &--fb
+            &:before
+
+    &--light
+        ^&__link
+            &--ln
+                &:before
+                    background-image: resolve("icons/social/ln.svg") 
+                    
+            &--yb
+                &:before
+                    background-image: resolve("icons/social/yb.svg") 
+
+            &--inst
+                &:before
+                    background-image: resolve("icons/social/inst.svg") 
+
+            &--fb
+                &:before
+                    background-image: resolve("icons/social/fb.svg") 
+                

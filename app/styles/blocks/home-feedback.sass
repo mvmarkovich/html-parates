@@ -1,0 +1,52 @@
+.home-feedback
+    display: flex
+    align-items: flex-start
+    margin-top: 32px @xl 64px
+    position: @xl relative
+    max-width: @xl 1400px
+    width: @xl 100vw
+    left: @xl 50%
+    transform: @xl translateX(-50%)
+    padding: @xl 0 32px
+
+    &__img
+        transform: rotate(-8deg)
+        min-width: 232px
+        max-width: 232px
+        margin: 0 auto
+
+        &--wrap
+            margin-top: 8px
+            transform: translateX(-50px)
+            width: 100%
+            display: none @xl block
+
+    &__form
+        border-radius: 20px
+        margin-left: auto
+        margin-right: auto @xl 0
+        width: 100%
+        max-width: 720px @xl 690px
+        min-width: @xl 690px
+        overflow: hidden
+
+        &-body
+            background: var(--color-white-solid)
+            padding: 24px
+            display: flex
+            flex-wrap: wrap
+            gap: 0 16px
+
+            & > *
+                flex: 1 1 240px
+
+        &-footer
+            background: #f4f4f4
+            padding: 20px @xl 20px 24px
+            display: flex
+
+            .btn
+                text: 16px
+                border-radius: 14px
+                letter-spacing: 0.03em
+                margin-left: auto

@@ -1,0 +1,55 @@
+.section
+    position: relative
+    margin: 40px 0 @sm 60px 0 @xl 100px 0
+
+    &:first-child
+        margin-top: 0
+
+    &__head
+        text-align: center
+        margin-bottom: 32px @lg 24px @xl 40px
+
+    &__title
+        margin-bottom: 0
+
+    &__text
+        text: 14px @sm 18px @xl 20px
+        margin: 12px 0 0
+
+    &--banner
+        position: relative 0 null null 50%
+        transform: translateX(-50%)
+        width: 100vw
+        overflow: hidden
+        margin-bottom: 0 @sm 0 @xl 0
+
+        & + .section--bg-blue
+            margin-top: 0 @sm 0 @xl 0
+
+    &--bg-blue,
+    &--bg-gray,
+    &--bg-yellow
+        padding: 40px 0 @sm 60px 0 @xl 100px 0
+
+        &:before
+            content: ''
+            size: 100vw 100%
+            position: absolute 0 null null 50%
+            transform: translateX(-50%)
+            z-index: -1
+
+    &--bg-blue
+        ^&__title,
+        ^&__text
+            color: #fff
+
+        &:before
+            background: var(--color-azure-26)
+
+    &--bg-gray
+        &:before
+            background: #f1f1f1
+
+    &--bg-yellow
+        &:before
+            background: #ffdb44

@@ -1,0 +1,72 @@
+.footer
+    font-family: var(--font-family)
+    background: var(--color-azure-26)
+    padding: 40px 0 @md 52px 0 60px
+
+    &__logo
+        display: none @md block
+        min-width: 226px @md 300px
+        max-width: 226px @md 300px
+        margin-bottom: 40px
+
+    &__main
+        display: @md flex
+        align-items: @md flex-start
+        justify-content: @md space-between
+        margin: @md * -20px
+
+    &__col
+        padding: @md 0 20px
+        margin-bottom: 40px @md 0
+
+        &:last-child
+            margin: 0
+
+    &__nav
+        max-width: 700px
+
+        ul
+            list-style: none
+            padding: 0
+            margin: 0 -10px @md 0 -10px -8px
+
+            display: flex
+            flex-wrap: wrap
+            justify-content: flex-end
+
+            li
+                width: 50%
+                padding: 0 10px
+                margin-bottom: @md 8px
+
+            a
+                color: var(--color-white-solid)
+                text: 400 14px 1.8
+
+                &:hover
+                    color: @lg rgba(255, 255, 255, .7)
+
+    &__copy
+        display: flex
+        flex-wrap: wrap
+        align-items: center
+        justify-content: space-between
+        gap: 10px 20px
+        margin-top: 40px
+        padding-top: 20px
+        border-top: 1px solid var(--color-white-solid)
+
+        &-col
+            display: flex
+            gap: 10px 48px
+
+            p:not([class]), a:not([class])
+                color: #999 @md var(--color-white-solid)
+                text: 12px
+                margin: 0
+
+            a:not([class])
+                &:hover
+                    color: @lg rgba(255, 255, 255, .7)
+
+    

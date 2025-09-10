@@ -1,0 +1,21 @@
+header.header
+    .container.header__container
+        .header__row
+            .header__logo
+                img.header__logo-img(src="img/icons/logo-light.png" width="174" height="55" alt="Parates")
+
+            nav.header__nav(aria-label="Main navigation")
+                ul.header__nav-list
+                    each category, i in nav
+                        li.header__nav-item
+                            a.header__nav-link(href="" + category.link)= category.name
+
+            button.btn.btn--reset.btn--burger.header__burger(aria-label="Toggle menu")
+
+        .header__overlay
+
+
+
+
+
+

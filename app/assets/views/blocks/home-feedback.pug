@@ -1,0 +1,33 @@
+section.section.section--bg-yellow
+    .section__head 
+        h2.section__title Say Goodbye to Costly Tariffs
+        .section__text Hey there! Stuck in a pricey electricity contract? We've got your back. Just let us know when your contract ends, and we'll remind you to switch to a better deal hassle-free. Say goodbye to high bills and hello to savings!
+
+    .home-feedback
+        .home-feedback__img--wrap
+            img.home-feedback__img(src="img/content/home-feedback/img.svg" width="233" height="288" alt="Say Goodbye to Costly Tariffs")
+
+        form.home-feedback__form(action="/.php" method="POST")
+            .home-feedback__form-body
+                label.input
+                    input.input__cell(type="text" name="first-name" value="Lauren")
+                    .input__label First Name
+
+                label.input
+                    input.input__cell(type="text" name="last-name" value="Clements-Paterson")
+                    .input__label Last Name
+
+                label.input
+                    input.input__cell(type="text" name="email")
+                    .input__label Email
+
+                label.input
+                    input.input__cell(type="text" name="zip-code")
+                    .input__label ZIP Code
+
+                label.input
+                    input.input__cell(type="text" name="contract-end")
+                    .input__label Contract End / Move Date
+
+            .home-feedback__form-footer
+                button.btn.btn--accent.btn--arrow-right(type="submit" aria-label="Send form") Remind me

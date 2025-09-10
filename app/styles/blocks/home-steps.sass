@@ -1,0 +1,95 @@
+.home-steps
+    font-family: var(--second-family)
+    position: @xl relative
+    max-width: @xl 1400px
+    width: @xl 100vw
+    left: @xl 50%
+    transform: @xl translateX(-50%)
+    padding: @xl 0 32px
+
+    &__wrapper
+        position: relative
+        background: var(--color-white-solid)
+        padding: 24px @lg 12px @xl 20px
+        border-radius: 14px @lg 10px @xl 28px
+
+        &::before
+            content: ''
+            height: @lg 3px
+            width: 2px @lg auto
+            background-position: center
+            background-repeat: repeat
+            background-size: contain
+            background: resolve("content/home-steps/line-vertical.svg") @lg resolve("content/home-steps/line-horizontal.svg")
+            position: absolute
+            left: 50% @lg 36px
+            right: @lg 36px
+            top: 24px @lg 50%
+            bottom: 24px @lg auto
+            transform: translateX(-50%) @lg translateY(-50%)
+            z-index: 1
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        margin: * -24px @xl * -36px
+        margin-bottom: -32px
+
+    &__card
+        position: relative
+        z-index: 1
+        width: 100% @lg 33.3%
+        padding: 0 24px @xl 0 36px
+        margin-bottom: 32px
+
+        &-inner
+            background: #f4f4f4
+            border-radius: 10px @xl 28px
+            height: 100%
+            padding: 10px 10px 10px 20px @xl 20px 20px 20px 32px
+            display: flex
+            align-items: center
+
+        &-icon
+            &--wrap
+                min-width: 36px @xl 52px
+                max-width: 36px @xl 52px
+                margin-right: 20px @xl 28px
+
+        &-name
+            font-family: var(--third-family)
+            text: 600 18px 1 @xl 24px
+
+        &-text
+            text: 16px @xl 20px
+            margin-top: 8px
+
+.home-warning
+    font-family: var(--second-family)
+    background: var(--color-yellow-50)
+    border-radius: 28px
+    padding: 24px 32px @xl 32px 40px 32px 48px
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 16px @sm 20px @xl 28px
+    max-width: 720px @xl 840px
+    margin: * auto
+
+    &__info
+        max-width: 540px
+
+    &__name
+        font-family: var(--third-family)
+        text: 600 18px @xl 700 28px
+        margin: 0
+
+    &__text
+        text: 16px @xl 20px
+        margin: 16px 0 0
+
+    &__img
+        &--wrap
+            min-width: 60px @sm 84px
+            max-width: 60px @sm 84px
+            margin-left: 32px

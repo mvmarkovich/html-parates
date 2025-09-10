@@ -1,0 +1,89 @@
+.home-banner
+    min-height: @lg 582px @xl 732px
+    padding: 60px 0 @xl 120px 0
+    display: flex
+    flex-direction: column
+    justify-content: flex-end
+
+    &::before
+        content: ''
+        size: 100%
+        position: absolute 0 null null 0
+        background: rgba(0, 0, 0, .8)
+        z-index: -1
+
+    &__img
+        position: absolute 0 null null 50%
+        transform: translateX(-50%)
+        size: 100%
+        object-fit: cover
+        z-index: -2
+
+    &__body
+        padding-top: 88px @lg 40px @xl 60px
+
+    &__caption
+        font-family: var(--third-family)
+        color: var(--color-white-solid)
+        text: 600 12px @sm 14px @xl 16px
+        letter-spacing: 0.09em
+        text-transform: uppercase
+        text-align: center
+        margin-bottom: 8px @xl 12px
+
+        span
+            color: var(--color-yellow-50)
+
+    &__title
+        color: var(--color-white-solid)
+        text-align: center
+        max-width: 710px
+        margin: 0 auto
+
+        span
+            color: var(--color-yellow-50)
+
+    &__text
+        font-family: var(--third-family)
+        color: var(--color-white-solid)
+        text: 600 16px @xl 24px
+        text-align: center
+        margin: 32px 0 0 @lg 20px 0 0 @xl 24px 0 0
+
+        span
+            color: var(--color-yellow-50)
+
+    &__form
+        background: var(--color-white-solid)
+        border-radius: 14px
+        padding: 16px 20px 20px
+        max-width: 440px
+        margin: 60px auto 0 @lg 24px auto 0 @xl 40px auto 0
+
+        .input
+            width: 100%
+            margin: 0
+
+        &-group
+            display: flex
+
+        &-input
+            border-radius: 14px 0 0 14px
+
+        &-submit
+            text: 16px
+            letter-spacing: 0.03em
+            border-radius: 0 14px 14px 0
+            padding: 0 16px @sm 0 28px
+
+        &-caption
+            text: 300 13px 1.5
+            text-align: center
+            max-width: 333px
+            margin: 18px auto 0
+
+        
+
+        
+
+

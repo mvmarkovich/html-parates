@@ -1,0 +1,44 @@
+.home-benefits
+    &__row
+        display: flex
+        flex-wrap: wrap
+        margin: * -10px
+        margin-bottom: -12px @md -20px
+
+    &__card
+        width: 100% @md 50%
+        padding: 0 10px
+        margin-bottom: 12px @md 20px
+
+        &-inner
+            background: var(--color-white-solid)
+            border: 1px solid var(--color-grey-91)
+            border-radius: 12px @xl 14px
+            padding: 20px @xl 24px
+            height: 100%
+            display: flex
+            align-items: flex-start
+            min-height: @md 184px
+
+        &-icon
+            min-width: 36px
+            max-width: 36px
+
+            &--wrap
+                background: var(--color-azure-26-80)
+                border-radius: 12px
+                display: flex
+                align-items: center
+                justify-content: center
+                margin-right: 20px
+                size: 52px
+                min-width: 52px
+
+        &-name
+            font-family: var(--third-family)
+            text: 600 18px @xl 700 28px 
+
+        &-text
+            text: 400 16px @xl 500 18px
+            margin: 8px 0 0
+    
