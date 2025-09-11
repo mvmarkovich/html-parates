@@ -1327,6 +1327,9 @@ img {
   margin: 0;
 }
 
+.footer__social {
+}
+
 .footer__nav {
   max-width: 700px;
 }
@@ -1887,6 +1890,10 @@ img {
     width: 24px;
     height: 24px;
     min-width: 24px;
+  }
+
+  .footer__social {
+    display: none;
   }
 }
 
