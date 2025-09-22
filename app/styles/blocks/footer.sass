@@ -2,6 +2,7 @@
     font-family: var(--font-family)
     background: var(--color-azure-26)
     padding: 40px 0 @md 52px 0 60px
+    margin-top: 32px @sm 40px @xl 60px
 
     &__logo
         display: none @md block
@@ -21,9 +22,6 @@
 
         &:last-child
             margin: 0
-
-    &__social
-        display: @xl none
 
     &__nav
         max-width: 700px
@@ -71,5 +69,8 @@
             a:not([class])
                 &:hover
                     color: @lg rgba(255, 255, 255, .7)
+
+body.home .footer
+    margin-top: 0
 
     

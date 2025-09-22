@@ -1,8 +1,9 @@
 .header
+    background: #002A86
     position: relative
     z-index: 99
     padding: 20px 0
-    margin-bottom: -88px @lg -108px @xl -124px
+    margin-bottom: 32px @sm 40px @xl 60px
 
     &__container
         max-width: 1680px
@@ -76,3 +77,7 @@
     .header__nav
         display: @lg-down block
         animation: @lg-down fadeIn .2s forwards
+
+body.home .header
+    background: transparent
+    margin-bottom: 0

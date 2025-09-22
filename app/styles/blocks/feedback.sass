@@ -1,0 +1,50 @@
+.feedback
+    width: 100%
+    max-width: 740px
+    margin: @xl * auto
+
+    &__title
+        text: 700 24px @xl 40px 
+        margin-bottom: 32px @sm 40px
+        text-align: @md-down center
+
+    &__form
+        &-body
+            display: @md flex
+            align-items: @md flex-start
+
+        &-left
+            min-width: @md 220px
+            max-width: @md 220px
+            margin-right: @md 20px
+
+        &-right
+            width: 100%
+
+        .input__label
+            color: #00aeed
+
+        .input__cell:focus ~ .input__label
+            color: #00aeed
+
+        .btn
+            text: 600 16px 
+            width: 100%
+
+        & ~ ^&__status
+            margin-top: 60px
+
+    &__status
+        font-family: var(--font-family)
+
+        &-icon
+            width: 40px
+            margin-bottom: 40px
+
+        &-title
+            text: 700 28px
+            margin: 0
+
+        &-text
+            text: 400 18px 1.67
+            margin: 20px 0 0

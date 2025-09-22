@@ -85,7 +85,7 @@ accordionItems.forEach(item => {
 	item.addEventListener('click', toggleAccordion);
 });
 
-const inputs = document.querySelectorAll('input');
+const inputs = document.querySelectorAll('input, textarea');
 
 inputs.forEach(input => {
 	if (input.value) {

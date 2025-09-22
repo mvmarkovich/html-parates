@@ -1,0 +1,65 @@
+.about-us
+    font-family: var(--font-family)
+    
+    &__title
+        text: 700 24px @xl 40px 
+        margin-bottom: 32px @sm 40px
+        text-align: @md-down center
+
+    &__container
+        display: @md flex
+        align-items: @md flex-start
+        margin-right: @xl -345px
+
+    &__main
+        min-width: @xl 670px
+        max-width: @xl 670px
+        width: 100%
+        margin: * auto
+
+    &__info
+        p
+            text: 400 14px 1.8
+            margin: 10px 0
+
+            a
+                color: #00aeed
+                text-decoration: none
+
+                &:hover
+                    color: @xl #0236a6
+
+        & > *
+            &:last-child
+                margin-bottom: 0
+
+            &:first-child
+                margin-top: 0
+
+    &__aside
+        min-width: @md 225px @xl 325px
+        max-width: @md 225px @xl 325px
+        margin: 32px 0 0 @md 0 0 0 20px
+
+        &-title
+            text: 600 16px 1.5
+            margin-bottom: 20px
+
+        &-list
+            list-style: none
+            padding: 0
+            margin: 0
+
+            li
+                text: 400 14px 1.8
+                margin-bottom: 10px
+
+                &:last-child
+                    margin: 0
+
+                a
+                    color: #00aeed
+                    text-decoration: none
+
+                    &:hover
+                        color: @xl #0236a6

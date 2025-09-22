@@ -1,0 +1,58 @@
+.textarea
+    font-family: var(--font-family)
+    max-width: @xl 670px
+    margin: * auto
+
+    h1, .h1
+        font-family: var(--third-family)
+        text: 700 24px @xl 40px
+        margin-bottom: 32px @sm 40px
+
+    h2, .h2
+        font-family: var(--third-family)
+        text: 700 18px @xl 28px
+        margin-top: 32px @sm 40px
+
+    h5, .h5
+        font-family: var(--font-family)
+        text: 600 16px
+        margin-top: 32px @sm 40px
+        margin-bottom: 10px
+
+    p
+        text: 400 14px 1.8
+        margin: 10px 0
+
+        big
+            text: 400 18px 1.67
+
+        a
+            color: #000
+            text-decoration: underline
+            text-decoration-thickness: 1px
+            text-underline-offset: 4px
+            word-wrap: break-word
+
+            &:hover
+                text-decoration-color: @lg transparent
+
+    ul
+        margin: 10px 0
+        padding-left: 16px
+
+        li
+            text: 400 14px 1.8
+            margin: 0 0 10px
+
+            &:last-child
+                margin: 0
+                
+    & > *
+        &:last-child
+            margin-bottom: 0
+
+        &:first-child
+            margin-top: 0
+
+
+

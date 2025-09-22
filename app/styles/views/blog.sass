@@ -1,0 +1,56 @@
+.blog
+    position: @xl relative
+    max-width: @xl 1400px
+    width: @xl 100vw
+    left: @xl 50%
+    transform: @xl translateX(-50%)
+    padding: @xl 0 32px
+
+    &__row
+        display: flex
+        flex-wrap: wrap
+        margin: *
+
+.post-card
+    flex: 1 1 350px
+    padding: 0 10px
+    margin-bottom: 20px
+
+    &__inner
+        color: #000
+        background: #f6f7f9
+        height: 100%
+        border-radius: 10px
+        overflow: hidden
+        display: block
+
+        &:hover
+            ^^&__img
+                transform: scale(1.05)
+
+            ^^&__name
+                color: @xl #0236a6
+
+    &__img
+        position: absolute 0 null null 0
+        transition: .2s ease
+
+        &--wrap
+            position: relative
+            padding-top: 56%
+            overflow: hidden
+
+    &__info
+        padding: 20px
+
+    &__name
+        font-family: var(--font-family)
+        text: 600 16px
+        margin: 0
+        transition: .2s
+
+    &__text
+        font-family: var(--font-family)
+        color: #000
+        text: 400 14px 1.8
+        margin: 16px 0 0

@@ -1,0 +1,35 @@
+extends layouts/layout.pug
+
+block title
+    title Contact Us | PArates
+
+block content
+    .feedback
+        h1.feedback__title Contact Us
+
+        form.form.feedback__form(action="/.php" method="POST")
+            .feedback__form-body
+                .feedback__form-left
+                    label.input
+                        input.input__cell(type="text" name="first-name" value="")
+                        .input__label First Name
+
+                    label.input
+                        input.input__cell(type="text" name="last-name" value="")
+                        .input__label Last Name
+
+                    label.input
+                        input.input__cell(type="text" name="email")
+                        .input__label Email
+
+                .feedback__form-right
+                    label.input
+                        textarea.input__cell(cols="3" rows="13" name="msg")
+                        .input__label Message
+
+                    button.btn.btn--accent.btn--arrow-right(type="submit" aria-label="Send form") Send
+
+        .feedback__status
+            img.feedback__status-icon(src="img/icons/form-status-success.svg" width="40" height="40" alt="Success!")
+            h3.feedback__status-title Your message has been sent
+            .feedback__status-text Thank you for your feedback! We will reply to you shortly.
