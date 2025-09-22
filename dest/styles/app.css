@@ -2516,6 +2516,11 @@ body.home .footer {
     margin-top: 60px;
   }
 
+  .about-us {
+    max-width: 670px;
+    margin: 0 auto;
+  }
+
   .about-us__title {
     font-size: 40px;
   }
