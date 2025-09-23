@@ -1,0 +1,43 @@
+.panel-offer
+    font-family: var(--font-family)
+    background: var(--color-yellow-50)
+    padding: 16px 0
+    margin-top: -32px @sm -40px @xl -60px
+    margin-bottom: 32px @sm 40px @xl 60px
+
+    &__container
+        max-width: 690px
+        margin: * auto
+        padding: 0 10px @sm 0 32px
+
+        display: flex
+        flex-wrap: wrap @md nowrap
+        align-items: center
+        justify-content: space-between
+
+    &__info
+        width: 100%
+        display: flex
+        align-items: center
+        justify-content: center
+        margin: 0 0 12px @md 0
+
+    &__title
+        font-family: var(--third-family)
+        text: 700 18px 1
+
+    &__caption
+        text: 700 10px 1.1
+        padding-left: 16px
+        margin-left: 16px
+        border-left: 1px solid #000
+
+    &__text
+        text: 9px 1
+        max-width: 300px
+        margin: @md 0 20px
+        width: 75% @md 100%
+
+    .btn--arrow-right
+        &:after
+            margin: 0

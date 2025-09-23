@@ -20,11 +20,6 @@
 	user-select: none
 	border: 1px solid var(--color-white-solid)
 
-	&:hover
-		color: @xl #fff
-		background: @xl #412920
-		border-color: @xl #412920
-
 	&--reset
 		margin: 0
 		padding: 0
@@ -73,6 +68,10 @@
 	&--burger
 		&:before
 			background-image: resolve("icons/burger.svg")
+
+	&--arrow-right
+		&:after
+			background-image: resolve("icons/arrow-right.svg")
 
 
 
